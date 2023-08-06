@@ -1,9 +1,9 @@
 :root {
   --border: 1px solid red;
   --brand_light: #0F6E8C;
-  --brand_deep:#05546D;
-  --blak_light:#4F4F4F;
-  --black_dark: #202F30;
+  --brand_deep: #055460;
+  --black_light: #4F4F4F;
+  --black_deep: #2D2F30;
   --white: #FFF;
 }
 
@@ -12,8 +12,7 @@ html {
   margin: 0;
   padding: 0;
   outline: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img,
@@ -30,10 +29,8 @@ a {
 
 img {
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: left;
-     object-position: left;
+  object-fit: cover;
+  object-position: left;
 }
 
 ul, ol {
@@ -70,8 +67,22 @@ section,
 aside,
 main,
 footer {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 90px;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 32px;
 }
 
 header {
@@ -89,8 +100,6 @@ nav {
 nav ul {
   margin-bottom: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 nav ul li {
