@@ -4,10 +4,19 @@ nav{
         margin-bottom: 0;
         padding: 0;
         display: flex;
+        justify-content: center;
+        gap: 55px;
         li{
-            list-style: none;
+            list-style-type: none;
             a{
-                color: red;
+                color: var(--black_deep);
+                text-transform: uppercase;
+                font-weight: 400;
+                &.active,
+                &:hover{
+                    // font-family:  var(--poppin_bold);
+                    font-weight: 800;
+                }
             }
         }
     }

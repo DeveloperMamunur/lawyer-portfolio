@@ -1,8 +1,25 @@
 header{
     border: var(--border);
-    padding: 20px;
-}
-
-h1{
-    text-align: center;
+    .header_body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0px;
+        .logo{
+            // border: var(--border);
+            img{
+                width: 131px;
+            }
+        }
+        .nav{
+            // border: var(--border);
+        }
+        .search{
+            // border: var(--border);
+            a{
+                padding-top: 6px;
+            }
+        }
+    }
 }
