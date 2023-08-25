@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lowyer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fonts/google_icons.css">
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
@@ -14,22 +17,79 @@
                 <div class="logo">
                     <img src="./assets/images/logo.png" alt="">
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="" class="active">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Gallery</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="search">
-                    <a href="#"><span class="material-symbols-outlined fill">
-                        search
-                        </span></a>
+                <div class="right_nav">
+                    <nav class="nav">
+                        <ul id="nav_list">
+                            <li class="close_nav">
+                                <a href="#"  onclick="event.preventDefault(); nav_list.classList.remove('active');">
+                                <span class="material-symbols-outlined fill">
+                                    close
+                                    </span>
+                                </a>
+                            </li>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#" class="active">About</a></li>
+                            <li><a href="#" class="active">Services</a></li>
+                            <li><a href="#" class="active">Gallery</a></li>
+                            <li><a href="#" class="active">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="extra_link">
+                        <div class="search">
+                            <a href="#" onclick="event.preventDefault();">
+                                <span class="material-symbols-outlined fill">
+                                search
+                                </span>
+                            </a>
+                        </div>
+                        <div class="nav_control">
+                            <a href="#" onclick="event.preventDefault(); nav_list.classList.add('active');">
+                                <span class="material-symbols-outlined fill">
+                                    format_align_right
+                                    </span>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
+                
             </div>
         </div>
     </header>
+    <section id="banner">
+        <div class="container">
+            <div class="banner_content">
+                <div class="banner_details">
+                    <div class="top">
+                        <h1>Your Solution Legal Consultacy</h1>
+                        <p>We are here to help you take care of your legality with the best service especially for you.</p>
+                        <a href="#" class="contact_button">Get Started</a>
+                    </div>
+                    <div class="bottom">
+                        <p>Trusted by 10+ companies in indonesia</p>
+                        <div class="sponsor_list">
+                            <a href="#">
+                                <img src="assets/images/sponsors_logo/Airbnb Logo.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/images/sponsors_logo/Google Logo.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/images/sponsors_logo/Hubspot Logo.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/images/sponsors_logo/Microsoft Logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner_image">
+                    <div class="img">
+                        <img src="assets/images/banner/lawer_image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

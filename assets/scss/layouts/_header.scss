@@ -1,5 +1,5 @@
 header{
-    border: var(--border);
+    // border: var(--border);
     .header_body{
         display: flex;
         flex-wrap: wrap;
@@ -12,14 +12,55 @@ header{
                 width: 131px;
             }
         }
-        .nav{
-            // border: var(--border);
-        }
-        .search{
-            // border: var(--border);
-            a{
-                padding-top: 6px;
+        .right_nav{
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            
+            .nav{
+                flex: 1;
+                display: grid;
+                align-items: center;
+                // border: var(--border);
             }
+            .extra_link{
+                display: flex;
+                .search{
+                    // border: var(--border);
+                    a{
+                        padding-top: 6px;
+                        color: var(--black_deep);
+                    }
+                }
+                .nav_control{
+                    display: none;
+                    // border: var(--border);
+                    
+                }
+
+            }
+
+            @include custom_media(0px, 991.9px){
+                justify-content: flex-end;
+                .nav{
+                    order: 2;
+                    flex: unset;
+                }
+                .extra_link{
+                    order: 1;
+                    gap: 10px;
+                    .nav_control{
+                        display: grid;
+                        align-items: center;
+                        a{
+                            line-height: 10px;
+                            color: var(--black_deep);
+                        }
+                    }
+                }
+            }
+            
         }
+        
     }
 }

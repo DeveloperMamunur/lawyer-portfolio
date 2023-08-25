@@ -1,5 +1,6 @@
 nav{
-    display: block;
+    
+    // display: block;
     ul{
         margin-bottom: 0;
         padding: 0;
@@ -8,6 +9,10 @@ nav{
         gap: 55px;
         li{
             list-style-type: none;
+            &.close_nav{
+                display: none;
+            }
+            
             a{
                 color: var(--black_deep);
                 text-transform: uppercase;
@@ -19,5 +24,47 @@ nav{
                 }
             }
         }
+    }
+}
+
+@include custom_media(0px, 991.9px){
+    nav{
+        position: relative;
+       ul{
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        gap: 10px;
+        width: 30vw;
+        min-width: 275px;
+        height: 100vh;
+        top: 0px;
+        text-align: center;
+        padding: 23px 0px;
+        right: 0;
+        justify-content: flex-start;
+        text-align: left;
+        padding-left: 30px;
+        background: #e2e2e247;
+        backdrop-filter: blur(5px);
+        box-shadow: 0px 0px 10px #00000052;
+
+        &.active{
+            display: block;
+        }
+        li{
+            &.close_nav{
+                display: block;
+                text-align: right;
+                a span{
+                    margin-right: 20px;
+                    font-size: 30px;
+                }
+            }
+            a{
+                font-size: 17px;
+            }
+        }
+       }
     }
 }
