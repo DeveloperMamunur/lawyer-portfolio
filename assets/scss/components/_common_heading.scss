@@ -1,0 +1,25 @@
+.common_heading{
+    h2{
+        font-family: var(--play_fair);
+        font-size: 48px;
+        line-height: 58px;
+
+        @include xs(){
+            font-size: 28px;
+            line-height: 42px;
+        }
+    }
+    p{
+        font-size: 20px;
+        font-family: var(--poppin_regular);
+        line-height: 36px;
+        color: var(--gray);
+        margin-top: 30px;
+
+        @include xs(){
+            margin-top: 15px;
+            font-size: 17px;
+            line-height: 28px;
+        }
+    }
+}

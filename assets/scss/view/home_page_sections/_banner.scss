@@ -2,22 +2,28 @@
     .banner_content{
         display: grid;
         grid-template-columns: 755px 1fr;
-        padding: 200px 0px 70px;
+        padding: 200px 0px 0px;
 
         @include xs(){
             grid-template-columns: 1fr;
-            padding: 30px 0px 70px;
+            padding: 30px 0px 0px;
         }
         @include sm(){
             grid-template-columns: 1fr;
-            padding: 30px 0px 70px;
+            padding: 30px 0px 0px;
         }
         @include md(){
             grid-template-columns: 735px 1fr;
-            padding: 70px 0px 70px;
+            padding: 70px 0px 118px;
         }
         @include lg(){
-            padding: 100px 0px 70px;
+            padding: 100px 0px 425px;
+        }
+        @include xl(){
+            padding: 100px 0px 160px;
+        }
+        @include xxl(){
+            padding: 100px 0px 160px;
         }
         .banner_details{
             .top{
@@ -117,6 +123,14 @@
                 }
                 img{
                     width: 100%;
+                    @include xs(){
+                        position: relative;
+                        bottom: -6px;
+                    }
+                    @include sm(){
+                        position: relative;
+                        bottom: -6px;
+                    }
                 }
             }
         }

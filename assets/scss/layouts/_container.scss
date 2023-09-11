@@ -2,6 +2,7 @@
     width: 1400px;
     // border: var(--border);
     margin: auto;
+    padding: 0px 15px;
 
     @include xs (){
         width: calc(100% - 30px);
