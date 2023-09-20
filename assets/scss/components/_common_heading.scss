@@ -1,4 +1,7 @@
 .common_heading{
+    &.center{
+        text-align: center;
+    }
     h2{
         font-family: var(--play_fair);
         font-size: 48px;
@@ -6,7 +9,11 @@
 
         @include xs(){
             font-size: 28px;
-            line-height: 42px;
+            line-height: 38px;
+        }
+        @include sm(){
+            font-size: 28px;
+            line-height: 38px;
         }
     }
     p{
@@ -17,9 +24,18 @@
         margin-top: 30px;
 
         @include xs(){
-            margin-top: 15px;
             font-size: 17px;
             line-height: 28px;
+        }
+        @include sm(){
+            font-size: 17px;
+            line-height: 28px;
+        }
+    }
+    &.white{
+        p,
+        h2{
+            color: var(--white);
         }
     }
 }
