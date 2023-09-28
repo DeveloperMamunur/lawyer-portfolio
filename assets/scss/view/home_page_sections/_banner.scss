@@ -13,7 +13,7 @@
             padding: 30px 0px 0px;
         }
         @include md(){
-            grid-template-columns: 735px 1fr;
+            grid-template-columns: 1fr 0px;
             padding: 70px 0px 118px;
         }
         @include lg(){
@@ -112,14 +112,17 @@
                     position: unset;
                     margin-top: 40px;
                 }
+                @include md(){
+                    width: 360px;
+                    left: -349px;
+                    top: 245px;
+                }
                 @include lg(){
                     left: -351px;
                     top: 219px;
                 }
-                @include md(){
-                    width: 360px;
-                    left: -392px;
-                    top: 245px;
+                @include xl(){
+                    left: -143px;
                 }
                 img{
                     width: 100%;
