@@ -1,12 +1,12 @@
 nav{
     
-    // display: block;
     ul{
         margin-bottom: 0;
         padding: 0;
         display: flex;
         justify-content: center;
         gap: 55px;
+        z-index: 9;
         li{
             list-style-type: none;
             &.close_nav{
@@ -19,8 +19,11 @@ nav{
                 font-weight: 400;
                 &.active,
                 &:hover{
-                    // font-family:  var(--poppin_bold);
-                    font-weight: 800;
+                    font-weight: 700;
+                    background-color: var(--brand_light);
+                    padding: 5px 12px;
+                    color: var(--white);
+                    border-radius: 2px;
                 }
             }
         }
@@ -62,6 +65,7 @@ nav{
                 }
             }
             a{
+                margin-bottom: 10px;
                 font-size: 17px;
             }
         }

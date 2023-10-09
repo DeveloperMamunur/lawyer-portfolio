@@ -18,7 +18,6 @@
 
         .left{
             padding: 45px 0;
-            border: 1px solid  var(--border);
             .action_btns{
                 .action_btn{
                     display: inline-flex;
@@ -44,7 +43,7 @@
         .right{
             .img{
                 height: 100%;
-                overflow-x: hidden;
+                overflow: hidden;
                 img{
                     border-bottom-left-radius: 40px;
                     max-width: unset;
